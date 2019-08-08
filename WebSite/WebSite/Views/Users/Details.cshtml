@@ -1,0 +1,16 @@
+﻿@model WebSite.Models.User
+
+@{
+    ViewBag.Title = Resources.User.Views.DetailsTitle;
+}
+
+<h2>@Resources.User.Views.DetailsTitle</h2>
+
+@Html.DisplayForModel()
+
+<div class="form-group col-md-offset-1">
+    <div id="menu" class="container btn-toolbar">
+        @Html.ActionLink(Resources.Shared.Edit, "Edit", new { id = Model.Id }, new { @class = "btn btn-success" })
+        @Html.ActionLink(Resources.Shared.Back, "Index", null, new { @class = "btn btn-default" })
+    </div>
+</div>

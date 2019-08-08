@@ -1,0 +1,14 @@
+﻿@model WebSite.Models.User
+
+@{
+    ViewBag.Title = Resources.User.Views.CreateTitle;
+    ViewBag.Submit = Resources.Shared.Create;
+}
+
+<h2>@Resources.User.Views.CreateTitle</h2>
+
+@Html.EditorForModel()
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

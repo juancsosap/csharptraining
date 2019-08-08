@@ -1,0 +1,17 @@
+﻿@model WebSite.Models.Views.Paginator
+
+<div id="menu" class="container panel">
+    @if (Model.HasNextPage())
+    {
+        <div class="pull-right">
+            @Html.ActionLink(Resources.Shared.Next, "Index", Model.GetNext(), new { @class = "btn bottom-left btn-primary" })
+        </div>
+    }
+    @if (Model.HasPreviousPage())
+    {
+        <div class="pull-left">
+            @Html.ActionLink(Resources.Shared.Previous, "Index", Model.GetPrevious(), new { @class = "btn bottom-left btn-primary" })
+        </div>
+    }
+</div>
+

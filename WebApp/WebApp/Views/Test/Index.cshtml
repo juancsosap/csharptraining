@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h4>@Html.ActionLink("View Result", "ViewResult")</h4>
+<h4>@Html.ActionLink("File Result", "FileResult")</h4>
+<h4>@Html.ActionLink("Content Result", "ContentResult")</h4>
+<h4>@Html.ActionLink("JSON Result", "JsonResult")</h4>
+<h4>@Html.ActionLink("Redirect Result", "RedirectResult")</h4>
+<h4>@Html.ActionLink("Redirect to Action Result", "RedirectActionResult")</h4>
+<h4>@Html.ActionLink("Redirect to Route Result", "RedirectRouteResult")</h4>
+<h4>@Html.ActionLink("HTTP Status Code Result", "HttpStatusCodeResult")</h4>
+<h4>@Html.ActionLink("HTTP Query String Result", "JsonResultQueryString", new { limit = 5, offset = 0 })</h4>
+<h4>@Html.ActionLink("HTTP GET Result", "HttpGetResult")</h4>
+
+<form action="/Test/HttpPostResult" method="post">
+    <h4>
+        <a>HTTP POST Result</a>
+        <input type="submit" value="Enviar" />
+    </h4>
+</form>
+
+<form action="/Test/HttpPostPayloadResult" method="post">
+    <h4>
+        <a>HTTP POST with Payload Result</a>
+        <input type="number" id="id" name="id" placeholder="id" />
+        <input type="submit" value="Enviar" />
+    </h4>
+</form>
+
+<form action="/Test/UsingViewBagResult" method="get">
+    <h4>
+        <a>Using ViewBag Result</a>
+        <input type="text" id="name" name="name" placeholder="name" />
+        <input type="number" id="age" name="age" placeholder="age" />
+        <input type="submit" value="Enviar" />
+    </h4>
+</form>
+
+<form action="/Test/UsingViewDataResult" method="get">
+    <h4>
+        <a>Using ViewData Result</a>
+        <input type="text" id="product" name="product" placeholder="product" />
+        <input type="number" id="quantity" name="quantity" placeholder="quantity" />
+        <input type="submit" value="Enviar" />
+    </h4>
+</form>
+
+<h4>@Html.ActionLink("Result with Model", "ModelResult")</h4>
+<h4>@Html.ActionLink("Result with Full Razor", "RazorResult")</h4>
+<h4>@Html.ActionLink("Raw Result", "RawResult")</h4>
+<h4>@Html.ActionLink("Result with Links", "LinksResult")</h4>
+<h4>@Html.ActionLink("Render Action Result", "RenderActionResult")</h4>
+<h4>@Html.ActionLink("Action Result", "ActionResult")</h4>
+<h4>@Html.ActionLink("Display Result", "DisplayResult", new { id = 1 })</h4>
+<h4>@Html.ActionLink("Editor Result", "EditorResult", new { id = 1 })</h4>

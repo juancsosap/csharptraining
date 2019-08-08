@@ -1,0 +1,32 @@
+﻿@using Microsoft.AspNet.Identity.EntityFramework
+@model IEnumerable<IdentityRole>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Role List</h2>
+
+<div id="menu" class="panel">
+    @Html.ActionLink("Create Role", "Create", "Role", null, new { @class = "btn btn-success" })
+    @Html.ActionLink("Assign Role to User", "RegisterRole", "Account", null, new { @class = "btn btn-success" })
+</div>
+
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Name)
+            </td>
+        </tr>
+    }
+
+</table>

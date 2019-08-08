@@ -1,0 +1,44 @@
+﻿@model Pagina.Models.Persona
+
+@{
+    ViewBag.Title = Recursos.Persona.Detalles.Vista.titulo;
+}
+
+<h2>@Recursos.Persona.Detalles.Vista.nombre</h2>
+
+<div>
+    <h4>@Recursos.Persona.Indice.Vista.nombre</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+        <dt> @Html.DisplayNameFor(m => m.id) </dt>
+        <dd> @Html.DisplayFor(m => m.id) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.nombre) </dt>
+        <dd> @Html.DisplayFor(m => m.nombre) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.apellido) </dt>
+        <dd> @Html.DisplayFor(m => m.apellido) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.edad) </dt>
+        <dd> @Html.DisplayFor(m => m.edad) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.email) </dt>
+        <dd> @Html.DisplayFor(m => m.email) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.direccion) </dt>
+        <dd> @Html.DisplayFor(m => m.direccion) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.tarjeta) </dt>
+        <dd> @Helper11.CreditCard(Model.tarjeta) </dd>
+
+        <dt> @Html.DisplayNameFor(m => m.nacimiento) </dt>
+        <dd> @Html.DisplayFor(m => m.nacimiento) </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(Recursos.Vista.boton_editar, "Editar", new { id = Model.id }, new { @class = "btn btn-info btn-xs" })
+</p>
+
+@Html.Partial("_Volver")

@@ -1,0 +1,6 @@
+﻿@helper CreditCard(string value) {
+    String visible = value.Substring(value.Length - 4);
+    int oculto = value.Length - 4;
+
+    @visible.PadLeft(oculto, '*')
+}

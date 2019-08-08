@@ -1,0 +1,27 @@
+﻿@using Pagina.Models
+
+@model IEnumerable<Persona>
+
+@{
+    ViewBag.Title = Recursos.Persona.Indice.Vista.titulo;
+}
+
+<h2>@Recursos.Persona.Indice.Vista.nombre</h2>
+
+@Html.ActionLink(Recursos.Vista.boton_crear, "Crear", null, new { @class = "btn btn-success" })
+
+<table class="table">
+
+    <tr>
+        <th> @Html.DisplayNameFor(m => m.id) </th>
+        <th> @Html.DisplayNameFor(m => m.nombre) </th>
+        <th> @Html.DisplayNameFor(m => m.apellido) </th>
+        <th> @Html.DisplayNameFor(m => m.edad) </th>
+        <th> @Html.DisplayNameFor(m => m.email) </th>
+        <th> @Html.DisplayNameFor(m => m.nacimiento) </th>
+        <th></th>
+    </tr>
+
+    @Html.DisplayForModel()
+
+</table>

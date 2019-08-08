@@ -1,0 +1,38 @@
+﻿@model WebSite.Models.Views.Paginator
+
+@{
+    int Initial = 1;
+    var Radio = 3;
+    var ShownPages = Radio * 2 + 1;
+    int End = (Model.GetTotalPages() > ShownPages) ? ShownPages : Model.GetTotalPages();
+    if (Model.GetCurrentPage() > Radio + 1)
+    {
+        Initial = Model.GetCurrentPage() - Radio;
+        if (Model.GetTotalPages() > Model.GetCurrentPage() + Radio)
+        {
+            End = Model.GetCurrentPage() + Radio;
+        }
+        else
+        {
+            End = Model.GetCurrentPage();
+        }
+    }
+}
+
+<div class="text-center">
+    <ul class="pagination">
+        <li>@Html.ActionLink(Resources.Shared.First, null, Model.GetFirst())</li>
+        @for (int i = Initial; i <= End; i++)
+        {
+            if (i == Model.GetCurrentPage())
+            {
+                <li class="active">@Html.ActionLink(i.ToString(), null, Model.GetPage(i))</li>
+            }
+            else
+            {
+                <li>@Html.ActionLink(i.ToString(), null, Model.GetPage(i))</li>
+            }
+        }
+        <li>@Html.ActionLink(Resources.Shared.Last, null, Model.GetLast())</li>
+    </ul>
+</div>

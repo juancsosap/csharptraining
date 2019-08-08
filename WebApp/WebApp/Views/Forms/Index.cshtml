@@ -1,0 +1,12 @@
+﻿@using WebApp.Models
+
+@model Int32
+
+@{ 
+    ViewBag.Title = "Forms Index";
+}
+
+<h2>Forms Index</h2>
+
+@Html.Action("_DropDownPeople", new Person { PersonID = Model })
+@Html.Action("_DropDownUserStatus", new { id = Model })

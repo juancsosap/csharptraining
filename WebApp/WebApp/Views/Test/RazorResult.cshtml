@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebApp.Models.Person>
+
+@{
+    ViewBag.Title = "People List Result";
+}
+
+<h2>People List Result</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Firstname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        @* Style Class definitions for people that is less than 18 years old *@
+        String ageclass = (item.Age < 18) ? "danger" : String.Empty;
+        
+        <tr class="@ageclass">
+            <td>
+                @Html.DisplayFor(modelItem => item.Firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthday)
+            </td>
+        </tr>
+     }
+
+</table>
+<p>Total: @Model.Count() People</p>
+@Html.Partial("_BackPartial")

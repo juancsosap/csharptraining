@@ -1,0 +1,30 @@
+﻿@model WebSite.Models.User
+
+@{
+    ViewBag.Title = Resources.User.Views.DeleteTitle;
+}
+
+<h2>@Resources.User.Views.DeleteTitle</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+
+@Html.DisplayForModel()
+
+<div>
+    
+</div>
+
+<div class="form-group col-md-offset-1">
+    <div id="menu" class="container">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color btn-toolbar">
+                <input type="submit" value="@Resources.Shared.Delete" class="btn btn-danger" />
+                @Html.ActionLink(Resources.Shared.Back, "Index", null, new { @class = "btn btn-default" })
+            </div>
+        }
+    </div>
+</div>
+

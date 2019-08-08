@@ -1,0 +1,117 @@
+﻿@using Microsoft.AspNet.Identity
+
+@model BlogSite.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <h4>Change your account settings</h4>
+    <h3>User: <b>@User.Identity.GetUserName()</b></h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Password:</dt>
+        <dd>
+            <div class="form-group">
+                <div class="btn-group">
+                    @if (Model.HasPassword)
+                    {
+                        @Html.ActionLink("Change Password", "ChangePassword", null, new { @class = "btn btn-default" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Create", "SetPassword", null, new { @class = "btn btn-default" })
+                    }
+                </div>
+            </div>
+        </dd>
+        
+        <dt>External Logins:</dt>
+        <dd> 
+            <div class="form-group">
+                <input class="form-control" value="@Model.Logins.Count" disabled />
+                <div class="btn-group">
+                    @Html.ActionLink("Manage", "ManageLogins", null, new { @class = "btn btn-default" })
+                </div>
+            </div>
+        </dd>
+        
+        <dt>Two-Factor Authentication:</dt>
+        <dd>
+            <div class="form-group">
+                @if (Model.TwoFactor)
+                {
+                    using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="btn-group">
+                            <input type="submit" value="Enable" class="btn btn-default" disabled />
+                            <input type="submit" value="Disable" class="btn btn-info" />
+                        </div>
+                    }
+                }
+                else
+                {
+                    using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="btn-group">
+                            <input type="submit" value="Enable" class="btn btn-info" />
+                            <input type="submit" value="Disable" class="btn btn-default" disabled />
+                        </div>
+                    }
+                }
+            </div>
+        </dd>
+
+        <dt>Phone Number:</dt>
+        <dd>
+            <div class="form-group">
+                @if (Model.PhoneNumber != null)
+                {
+                    using (Html.BeginForm("RemovePhoneNumber", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input class="form-control" value="@Model.PhoneNumber" disabled />
+                            <div class="btn-group">
+                                @Html.ActionLink("Change", "AddPhoneNumber", null, new { @class = "btn btn-default" })
+                                <input type="submit" value="Remove" class="btn btn-default" />
+                            </div>
+                    }
+                }
+                else
+                {
+                    @Html.ActionLink("Add", "AddPhoneNumber", null, new { @class = "btn btn-default" })
+                }
+            </div>
+        </dd>
+
+        <dt>Google Authenticator:</dt>
+        <dd>
+            <div class="form-group">
+                @if (Model.UsarGoogleAuthenticator)
+                {
+                    using (Html.BeginForm("DisableGoogleAuthenticator", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                            @Html.AntiForgeryToken()
+                            <div class="btn-group">
+                                <input type="submit" value="Enable" class="btn btn-default" disabled />
+                                <input type="submit" value="Disable" class="btn btn-info" />
+                            </div>
+                    }
+                }
+                else
+                {
+                    <div class="btn-group">
+                        @Html.ActionLink("Enable", "EnableGoogleAuthenticator", null, new { @class = "btn btn-info" })
+                        <input type="submit" value="Disable" class="btn btn-default" disabled />
+                    </div>
+                }
+            </div>
+        </dd>
+
+    </dl>
+</div>

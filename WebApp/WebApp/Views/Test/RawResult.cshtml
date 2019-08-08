@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Raw View Result";
+    ViewBag.Html = "<b>This HTML message come from C# code<b>";
+    ViewBag.Message = "<script>alert('This is a virus')</script>";
+}
+
+<h2>View Result</h2>
+
+<h3>With Code Injection Protection</h3>
+@ViewBag.Html <br />
+@ViewBag.Message <br />
+@ViewBag.Data
+
+<h3>With Raw Method (without Code Injection Protection)</h3>
+@Html.Raw(ViewBag.Html) <br />
+@Html.Raw(ViewBag.Message) <br />
+@Html.Raw(ViewBag.Data)
+
+@Html.Partial("_BackPartial")
+

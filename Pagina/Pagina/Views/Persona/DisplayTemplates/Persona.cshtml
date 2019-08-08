@@ -1,0 +1,18 @@
+﻿@using Pagina.Models
+
+@model Persona
+
+<tr>
+    <td> @Html.DisplayFor(m => m.id) </td>
+    <td> @Html.DisplayFor(m => m.nombre) </td>
+    <td> @Html.DisplayFor(m => m.apellido) </td>
+    <td> @Html.DisplayFor(m => m.edad) </td>
+    <td> @Html.DisplayFor(m => m.email) </td>
+    <td> @Html.DisplayFor(m => m.nacimiento) </td>
+
+    <td>
+        @Html.ActionLink(Recursos.Vista.boton_detalles, "Detalles", new { id = Model.id }, new { @class = "btn btn-info btn-xs" })
+        @Html.ActionLink(Recursos.Vista.boton_editar, "Editar", new { id = Model.id }, new { @class = "btn btn-info btn-xs" })
+        @Html.ActionLink(Recursos.Vista.boton_borrar, "Borrar", new { id = Model.id }, new { @class = "btn btn-info btn-xs" })
+    </td>
+</tr>

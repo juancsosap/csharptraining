@@ -1,0 +1,45 @@
+﻿@model WebApp.Models.Person
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Firstname)
+        </th>
+        <td>
+            @Html.EditorFor(m => m.Firstname)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Surname)
+        </th>
+        <td>
+            @Html.EditorFor(m => m.Surname)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Age)
+        </th>
+        <td>
+            @Html.EditorFor(m => m.Age)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Active)
+        </th>
+        <td>
+            @Html.EditorFor(m => m.Active)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Birthday)
+        </th>
+        <td>
+            @Html.EditorFor(m => m.Birthday)
+        </td>
+    </tr>
+</table>

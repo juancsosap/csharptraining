@@ -1,0 +1,55 @@
+﻿@model Pagina.Models.Persona
+
+@{
+    ViewBag.Title = Recursos.Persona.Borrar.Vista.titulo;
+}
+
+<h2>@Recursos.Persona.Borrar.Vista.nombre</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>@Recursos.Persona.Indice.Vista.nombre</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <dl class="dl-horizontal">
+
+            <dt> @Html.DisplayNameFor(m => m.id) </dt>
+            <dd> @Html.DisplayFor(m => m.id) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.nombre) </dt>
+            <dd> @Html.DisplayFor(m => m.nombre) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.apellido) </dt>
+            <dd> @Html.DisplayFor(m => m.apellido) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.edad) </dt>
+            <dd> @Html.DisplayFor(m => m.edad) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.email) </dt>
+            <dd> @Html.DisplayFor(m => m.email) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.direccion) </dt>
+            <dd> @Html.DisplayFor(m => m.direccion) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.tarjeta) </dt>
+            <dd> @Helper11.CreditCard(Model.tarjeta) </dd>
+
+            <dt> @Html.DisplayNameFor(m => m.nacimiento) </dt>
+            <dd> @Html.DisplayFor(m => m.nacimiento) </dd>
+
+        </dl>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="@Recursos.Vista.boton_borrar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@Html.Partial("_Volver")

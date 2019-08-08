@@ -1,0 +1,13 @@
+﻿@using BlogSite.Models
+@using BlogSite.Tools
+
+@model BlogPostCategory?
+
+@Html.EnumDropDownListFor(x => x, "Blog Post Category", new { @class = "form-control" })
+
+@if(Model == null)
+{
+
+}
+
+@*@Html.DropDownList("Blog Post Category", ViewTools.ToSelectListItem<BlogPostCategory>(Model))*@

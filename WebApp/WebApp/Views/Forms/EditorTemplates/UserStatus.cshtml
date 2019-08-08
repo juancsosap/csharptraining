@@ -1,0 +1,6 @@
+﻿@using WebApp.Models
+@using WebApp.Tools
+
+@model UserStatus
+
+@Html.DropDownList("Status List", ViewTools.ToSelectListItem<UserStatus>(Model))

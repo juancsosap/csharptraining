@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Links Result";
+}
+
+<h2>Links Result</h2>
+
+<h4>@Html.ActionLink("Link to Test/Index", "Index")</h4>
+<h4>@Html.ActionLink("Link to Home/Index", "Index", "Home")</h4>
+<h4>@Html.ActionLink("Link to Home/Index with Html atributes", "Index", "Home", null, new { id = "link", @class = "btn btn-danger" })</h4>
+<h4>@Html.ActionLink("Link to HTTP Query String Result", "JsonResultQueryString", new { limit = 2, offset = 2 })</h4>

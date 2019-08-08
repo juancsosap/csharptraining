@@ -1,0 +1,6 @@
+﻿@using WebStarted.Models
+@using WebStarted.Tools
+
+@model WebStarted.Models.BlogPostCategory
+
+@Html.DropDownList("Blog Post Category", ViewTools.ToSelectListItem<BlogPostCategory>(Model))
