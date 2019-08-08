@@ -1,0 +1,7 @@
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\bin\Debug\InfiniteCalc.exe.config
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\bin\Debug\InfiniteCalc.exe
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\bin\Debug\InfiniteCalc.pdb
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\obj\Debug\InfiniteCalc.csprojResolveAssemblyReference.cache
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\obj\Debug\InfiniteCalc.csproj.CoreCompileInputs.cache
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\obj\Debug\InfiniteCalc.exe
+c:\users\juanc\source\repos\InfiniteMath\InfiniteCalc\obj\Debug\InfiniteCalc.pdb

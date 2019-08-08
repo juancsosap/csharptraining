@@ -1,0 +1,7 @@
+c:\users\juanc\source\repos\netec\des1-app-lm\bin\Debug\des1-app-lm.exe.config
+c:\users\juanc\source\repos\netec\des1-app-lm\bin\Debug\des1-app-lm.exe
+c:\users\juanc\source\repos\netec\des1-app-lm\bin\Debug\des1-app-lm.pdb
+c:\users\juanc\source\repos\netec\des1-app-lm\obj\Debug\des1-app-lm.csprojResolveAssemblyReference.cache
+c:\users\juanc\source\repos\netec\des1-app-lm\obj\Debug\des1-app-lm.csproj.CoreCompileInputs.cache
+c:\users\juanc\source\repos\netec\des1-app-lm\obj\Debug\des1-app-lm.exe
+c:\users\juanc\source\repos\netec\des1-app-lm\obj\Debug\des1-app-lm.pdb

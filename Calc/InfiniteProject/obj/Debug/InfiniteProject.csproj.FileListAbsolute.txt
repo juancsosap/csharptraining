@@ -1,0 +1,10 @@
+C:\Users\juanc\source\repos\Calc\InfiniteProject\bin\Debug\InfiniteProject.exe.config
+C:\Users\juanc\source\repos\Calc\InfiniteProject\bin\Debug\InfiniteProject.exe
+C:\Users\juanc\source\repos\Calc\InfiniteProject\bin\Debug\InfiniteProject.pdb
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.InfiniteAdder.resources
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.Properties.Resources.resources
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.csproj.GenerateResource.Cache
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.exe
+C:\Users\juanc\source\repos\Calc\InfiniteProject\obj\Debug\InfiniteProject.pdb

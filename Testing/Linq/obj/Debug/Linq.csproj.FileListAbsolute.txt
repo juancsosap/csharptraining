@@ -1,0 +1,7 @@
+C:\Users\juanc\source\repos\Testing\Linq\bin\Debug\Linq.exe.config
+C:\Users\juanc\source\repos\Testing\Linq\bin\Debug\Linq.exe
+C:\Users\juanc\source\repos\Testing\Linq\bin\Debug\Linq.pdb
+C:\Users\juanc\source\repos\Testing\Linq\obj\Debug\Linq.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\Testing\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\Testing\Linq\obj\Debug\Linq.exe
+C:\Users\juanc\source\repos\Testing\Linq\obj\Debug\Linq.pdb

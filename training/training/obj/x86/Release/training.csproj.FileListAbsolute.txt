@@ -1,0 +1,3 @@
+/home/admin/Projects/training/training/bin/Release/training.exe
+/home/admin/Projects/training/training/obj/x86/Release/training.csproj.CoreCompileInputs.cache
+/home/admin/Projects/training/training/obj/x86/Release/training.exe

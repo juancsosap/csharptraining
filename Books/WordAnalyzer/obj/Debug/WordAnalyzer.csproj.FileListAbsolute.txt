@@ -1,0 +1,7 @@
+C:\Users\juanc\source\repos\Books\WordAnalyzer\bin\Debug\WordAnalyzer.exe.config
+C:\Users\juanc\source\repos\Books\WordAnalyzer\bin\Debug\WordAnalyzer.exe
+C:\Users\juanc\source\repos\Books\WordAnalyzer\bin\Debug\WordAnalyzer.pdb
+C:\Users\juanc\source\repos\Books\WordAnalyzer\obj\Debug\WordAnalyzer.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\Books\WordAnalyzer\obj\Debug\WordAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\Books\WordAnalyzer\obj\Debug\WordAnalyzer.exe
+C:\Users\juanc\source\repos\Books\WordAnalyzer\obj\Debug\WordAnalyzer.pdb

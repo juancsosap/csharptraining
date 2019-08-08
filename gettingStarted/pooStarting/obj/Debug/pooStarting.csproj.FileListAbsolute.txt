@@ -1,0 +1,7 @@
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\bin\Debug\pooStarting.exe.config
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\bin\Debug\pooStarting.exe
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\bin\Debug\pooStarting.pdb
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\obj\Debug\pooStarting.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\obj\Debug\pooStarting.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\obj\Debug\pooStarting.exe
+C:\Users\juanc\source\repos\gettingStarted\pooStarting\obj\Debug\pooStarting.pdb

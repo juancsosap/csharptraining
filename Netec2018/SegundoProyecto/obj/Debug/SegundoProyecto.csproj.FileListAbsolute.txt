@@ -1,0 +1,6 @@
+C:\Users\juanc\source\repos\Netec2018\SegundoProyecto\bin\Debug\SegundoProyecto.exe.config
+C:\Users\juanc\source\repos\Netec2018\SegundoProyecto\bin\Debug\SegundoProyecto.exe
+C:\Users\juanc\source\repos\Netec2018\SegundoProyecto\bin\Debug\SegundoProyecto.pdb
+C:\Users\juanc\source\repos\Netec2018\SegundoProyecto\obj\Debug\SegundoProyecto.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\Netec2018\SegundoProyecto\obj\Debug\SegundoProyecto.exe
+C:\Users\juanc\source\repos\Netec2018\SegundoProyecto\obj\Debug\SegundoProyecto.pdb

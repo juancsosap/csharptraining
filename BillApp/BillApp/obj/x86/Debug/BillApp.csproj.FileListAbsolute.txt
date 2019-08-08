@@ -1,0 +1,2 @@
+/home/admin/Projects/BillApp/BillApp/obj/x86/Debug/BillApp.csprojAssemblyReference.cache
+/home/admin/Projects/BillApp/BillApp/obj/x86/Debug/BillApp.csproj.CoreCompileInputs.cache

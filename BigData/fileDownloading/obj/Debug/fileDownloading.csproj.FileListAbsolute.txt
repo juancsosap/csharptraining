@@ -1,0 +1,7 @@
+C:\Users\juanc\source\repos\BigData\fileDownloading\bin\Debug\fileDownloading.exe.config
+C:\Users\juanc\source\repos\BigData\fileDownloading\bin\Debug\fileDownloading.exe
+C:\Users\juanc\source\repos\BigData\fileDownloading\bin\Debug\fileDownloading.pdb
+C:\Users\juanc\source\repos\BigData\fileDownloading\obj\Debug\fileDownloading.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\BigData\fileDownloading\obj\Debug\fileDownloading.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\BigData\fileDownloading\obj\Debug\fileDownloading.exe
+C:\Users\juanc\source\repos\BigData\fileDownloading\obj\Debug\fileDownloading.pdb

@@ -1,0 +1,10 @@
+C:\Users\juanc\source\repos\BigData\fileProcess\obj\Debug\fileProcess.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\BigData\fileProcess\obj\Debug\fileProcess.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\BigData\fileProcess\bin\Debug\fileProcess.exe.config
+C:\Users\juanc\source\repos\BigData\fileProcess\bin\Debug\fileProcess.exe
+C:\Users\juanc\source\repos\BigData\fileProcess\bin\Debug\fileProcess.pdb
+C:\Users\juanc\source\repos\BigData\fileProcess\bin\Debug\fileDownloading.exe
+C:\Users\juanc\source\repos\BigData\fileProcess\bin\Debug\fileDownloading.pdb
+C:\Users\juanc\source\repos\BigData\fileProcess\bin\Debug\fileDownloading.exe.config
+C:\Users\juanc\source\repos\BigData\fileProcess\obj\Debug\fileProcess.exe
+C:\Users\juanc\source\repos\BigData\fileProcess\obj\Debug\fileProcess.pdb

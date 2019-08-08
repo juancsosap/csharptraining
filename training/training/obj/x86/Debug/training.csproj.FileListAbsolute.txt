@@ -1,0 +1,6 @@
+/home/admin/Projects/training/training/bin/Debug/training.exe
+/home/admin/Projects/training/training/bin/Debug/training.pdb
+/home/admin/Projects/training/training/obj/x86/Debug/training.csprojAssemblyReference.cache
+/home/admin/Projects/training/training/obj/x86/Debug/training.csproj.CoreCompileInputs.cache
+/home/admin/Projects/training/training/obj/x86/Debug/training.exe
+/home/admin/Projects/training/training/obj/x86/Debug/training.pdb

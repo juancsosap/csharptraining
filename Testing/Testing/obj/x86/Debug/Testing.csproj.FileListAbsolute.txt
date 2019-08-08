@@ -1,0 +1,6 @@
+/home/admin/Projects/Testing/Testing/bin/Debug/Testing.exe
+/home/admin/Projects/Testing/Testing/bin/Debug/Testing.pdb
+/home/admin/Projects/Testing/Testing/obj/x86/Debug/Testing.csprojAssemblyReference.cache
+/home/admin/Projects/Testing/Testing/obj/x86/Debug/Testing.csproj.CoreCompileInputs.cache
+/home/admin/Projects/Testing/Testing/obj/x86/Debug/Testing.exe
+/home/admin/Projects/Testing/Testing/obj/x86/Debug/Testing.pdb

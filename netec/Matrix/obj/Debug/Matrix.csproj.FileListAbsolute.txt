@@ -1,0 +1,7 @@
+C:\Users\juanc\source\repos\Netec\Matrix\bin\Debug\Matrix.exe.config
+C:\Users\juanc\source\repos\Netec\Matrix\bin\Debug\Matrix.exe
+C:\Users\juanc\source\repos\Netec\Matrix\bin\Debug\Matrix.pdb
+C:\Users\juanc\source\repos\Netec\Matrix\obj\Debug\Matrix.csprojResolveAssemblyReference.cache
+C:\Users\juanc\source\repos\Netec\Matrix\obj\Debug\Matrix.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\Netec\Matrix\obj\Debug\Matrix.exe
+C:\Users\juanc\source\repos\Netec\Matrix\obj\Debug\Matrix.pdb
