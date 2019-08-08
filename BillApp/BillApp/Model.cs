@@ -7,7 +7,7 @@ using System.Globalization;
 namespace BillApp.Models
 {
     class CI {
-        public static const CultureInfo default = new CultureInfo("es");
+        public static const CultureInfo baseCI = new CultureInfo("es");
     }
 
     class Bill
@@ -25,7 +25,7 @@ namespace BillApp.Models
 
             this.code = Utils.GetText(input, "Factura Folio Interno: ", "\n");
             this.date = Utils.ToDate(Utils.GetText(input, "Fecha y Hora de Emisión: ", "T"), "yyyy-MM-dd"); // 2019-01-24
-            this.total = Utils.ToDouble(Utils.GetText(input, "\nTotal\n", "\n"), CI.default);
+            this.total = Utils.ToDouble(Utils.GetText(input, "\nTotal\n", "\n"), CI.baseCI);
             String codes = Utils.GetText(input, code + "\n", "\n");
 
             String intemsZone = Utils.GetText(input, "Total\n", "\nAVISO:\n");
@@ -91,10 +91,10 @@ namespace BillApp.Models
 
             this.quantity = Utils.ToInt(values[0]);
             this.pn = values[2];
-            this.unitPrice = Utils.ToDouble(values[size - 4], CI.default);
-            this.amount = Utils.ToDouble(values[size - 3], CI.default);
-            this.discount = Utils.ToDouble(values[size - 2], CI.default);
-            this.total = Utils.ToDouble(values[size - 1], CI.default);
+            this.unitPrice = Utils.ToDouble(values[size - 4], CI.baseCI);
+            this.amount = Utils.ToDouble(values[size - 3], CI.baseCI);
+            this.discount = Utils.ToDouble(values[size - 2], CI.baseCI);
+            this.total = Utils.ToDouble(values[size - 1], CI.baseCI);
         }
 
         private static Regex exception = new Regex(@"-6");
