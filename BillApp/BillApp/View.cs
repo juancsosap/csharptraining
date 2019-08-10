@@ -16,20 +16,23 @@ namespace BillApp
         {
             IList<String> files = Utils.LoadPaths("PDF files | *.pdf");
 
-            foreach (String file in files)
+            if (files != null)
             {
-                Boolean valid = true;
-                foreach(TreeNode node in tvList.Nodes)
+                foreach (String file in files)
                 {
-                    if (node.Text.Equals(file))
+                    Boolean valid = true;
+                    foreach (TreeNode node in tvList.Nodes)
                     {
-                        valid = false;
-                        break;
+                        if (node.Text.Equals(file))
+                        {
+                            valid = false;
+                            break;
+                        }
                     }
-                }
-                if (valid)
-                {
-                    tvList.Nodes.Add(file);
+                    if (valid)
+                    {
+                        tvList.Nodes.Add(file);
+                    }
                 }
             }
         }
@@ -40,13 +43,13 @@ namespace BillApp
 
             foreach (TreeNode node in tvList.Nodes)
             {
-                if(node.Checked)
+                if (node.Checked)
                 {
                     checkedNodes.Add(node);
                 }
             }
 
-            if(checkedNodes.Count > 0)
+            if (checkedNodes.Count > 0)
             {
                 foreach (TreeNode node in checkedNodes)
                 {
@@ -76,7 +79,9 @@ namespace BillApp
                 if (IsFormValid())
                 {
                     sbInfo.Text = "Loading Bill";
-                    Bill bill = new Bill(tbBillPath.Text);
+                    String lang = rbES.Checked ? "es" :
+                                  rbEN.Checked ? "en" : "es";
+                    Bill bill = new Bill(tbBillPath.Text, lang);
 
                     List<OrderList> orders = new List<OrderList>();
                     int ordersCount = tvList.Nodes.Count;
@@ -97,12 +102,13 @@ namespace BillApp
                 {
                     MessageBox.Show("Please fill all the fields.", "Bill App Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.StackTrace);
                 //MessageBox.Show("Invalid File Format.", "Bill App Warning Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            
+
         }
 
         public void StatusUpdate(String msg) => sbInfo.Text = msg;

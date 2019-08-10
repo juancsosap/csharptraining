@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
             this.tvList = new System.Windows.Forms.TreeView();
             this.lbList = new System.Windows.Forms.Label();
             this.btAddItem = new System.Windows.Forms.Button();
@@ -44,13 +43,15 @@
             this.lbOutputFileName = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.sbInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.rbES = new System.Windows.Forms.RadioButton();
+            this.rbEN = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tvList
             // 
             this.tvList.CheckBoxes = true;
-            this.tvList.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tvList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tvList.Location = new System.Drawing.Point(12, 35);
             this.tvList.Name = "tvList";
             this.tvList.Size = new System.Drawing.Size(697, 184);
@@ -59,17 +60,17 @@
             // lbList
             // 
             this.lbList.AutoSize = true;
-            this.lbList.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbList.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbList.Location = new System.Drawing.Point(12, 13);
             this.lbList.Name = "lbList";
-            this.lbList.Size = new System.Drawing.Size(94, 15);
+            this.lbList.Size = new System.Drawing.Size(100, 16);
             this.lbList.TabIndex = 1;
             this.lbList.Text = "Packing Lists";
             // 
             // btAddItem
             // 
-            this.btAddItem.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAddItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAddItem.Location = new System.Drawing.Point(603, 9);
             this.btAddItem.Name = "btAddItem";
             this.btAddItem.Size = new System.Drawing.Size(106, 23);
@@ -80,7 +81,7 @@
             // 
             // btDelItem
             // 
-            this.btDelItem.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDelItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDelItem.Location = new System.Drawing.Point(491, 9);
             this.btDelItem.Name = "btDelItem";
             this.btDelItem.Size = new System.Drawing.Size(106, 23);
@@ -91,7 +92,7 @@
             // 
             // btBillPath
             // 
-            this.btBillPath.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBillPath.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btBillPath.Location = new System.Drawing.Point(603, 225);
             this.btBillPath.Name = "btBillPath";
             this.btBillPath.Size = new System.Drawing.Size(106, 23);
@@ -103,10 +104,10 @@
             // lbBill
             // 
             this.lbBill.AutoSize = true;
-            this.lbBill.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBill.Location = new System.Drawing.Point(12, 229);
             this.lbBill.Name = "lbBill";
-            this.lbBill.Size = new System.Drawing.Size(32, 15);
+            this.lbBill.Size = new System.Drawing.Size(30, 16);
             this.lbBill.TabIndex = 5;
             this.lbBill.Text = "Bill";
             // 
@@ -128,7 +129,7 @@
             // 
             // btOutputFolder
             // 
-            this.btOutputFolder.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btOutputFolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOutputFolder.Location = new System.Drawing.Point(603, 276);
             this.btOutputFolder.Name = "btOutputFolder";
             this.btOutputFolder.Size = new System.Drawing.Size(106, 23);
@@ -140,17 +141,17 @@
             // lbOutputFolder
             // 
             this.lbOutputFolder.AutoSize = true;
-            this.lbOutputFolder.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOutputFolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOutputFolder.Location = new System.Drawing.Point(12, 280);
             this.lbOutputFolder.Name = "lbOutputFolder";
-            this.lbOutputFolder.Size = new System.Drawing.Size(94, 15);
+            this.lbOutputFolder.Size = new System.Drawing.Size(101, 16);
             this.lbOutputFolder.TabIndex = 9;
             this.lbOutputFolder.Text = "Output Folder";
             // 
             // btGenerate
             // 
             this.btGenerate.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btGenerate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btGenerate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btGenerate.Location = new System.Drawing.Point(521, 336);
             this.btGenerate.Name = "btGenerate";
@@ -170,10 +171,10 @@
             // lbOutputFileName
             // 
             this.lbOutputFileName.AutoSize = true;
-            this.lbOutputFileName.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOutputFileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOutputFileName.Location = new System.Drawing.Point(12, 336);
             this.lbOutputFileName.Name = "lbOutputFileName";
-            this.lbOutputFileName.Size = new System.Drawing.Size(124, 15);
+            this.lbOutputFileName.Size = new System.Drawing.Size(135, 16);
             this.lbOutputFileName.TabIndex = 13;
             this.lbOutputFileName.Text = "Output Files Name";
             // 
@@ -192,11 +193,35 @@
             this.sbInfo.Name = "sbInfo";
             this.sbInfo.Size = new System.Drawing.Size(0, 17);
             // 
+            // rbES
+            // 
+            this.rbES.AutoSize = true;
+            this.rbES.Checked = true;
+            this.rbES.Location = new System.Drawing.Point(335, 225);
+            this.rbES.Name = "rbES";
+            this.rbES.Size = new System.Drawing.Size(63, 17);
+            this.rbES.TabIndex = 15;
+            this.rbES.TabStop = true;
+            this.rbES.Text = "Spanish";
+            this.rbES.UseVisualStyleBackColor = true;
+            // 
+            // rbEN
+            // 
+            this.rbEN.AutoSize = true;
+            this.rbEN.Location = new System.Drawing.Point(450, 225);
+            this.rbEN.Name = "rbEN";
+            this.rbEN.Size = new System.Drawing.Size(59, 17);
+            this.rbEN.TabIndex = 16;
+            this.rbEN.Text = "English";
+            this.rbEN.UseVisualStyleBackColor = true;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 414);
+            this.Controls.Add(this.rbEN);
+            this.Controls.Add(this.rbES);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tbOutputFileName);
             this.Controls.Add(this.lbOutputFileName);
@@ -212,7 +237,6 @@
             this.Controls.Add(this.lbList);
             this.Controls.Add(this.tvList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "View";
@@ -241,6 +265,8 @@
         private System.Windows.Forms.Label lbOutputFileName;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel sbInfo;
+        private System.Windows.Forms.RadioButton rbES;
+        private System.Windows.Forms.RadioButton rbEN;
     }
 }
 
